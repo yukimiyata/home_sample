@@ -10,5 +10,12 @@
 
   <body>
     <%= yield %>
+    <script>
+      function chgColor(){
+        if(document.getElementById){
+          document.getElementById("col").style.color = "red";
+        }
+      }
+    </script>
   </body>
 </html>
