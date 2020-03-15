@@ -6,15 +6,115 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css">
+      .gazou{
+        margin: 120px 70px;
+        display: inline-block;
+      }
+      .gazou1{
+        margin: 0px 70px;
+        display: inline-block;
+      }
+    </style>
   </head>
 
   <body>
     <%= yield %>
     <script>
-      function chgColor(){
-        if(document.getElementById){
-          document.getElementById("col").style.color = "red";
-        }
+      //マウスオーバー時の処理
+      function mouseOnNeko(){
+        var obj = document.getElementById("neko");
+        obj.src = "/assets/neko.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffNeko(){
+        var obj = document.getElementById("neko");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnSirakawa(){
+        var obj = document.getElementById("sirakawa");
+        obj.src = "/assets/sirakawa.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffSirakawa(){
+        var obj = document.getElementById("sirakawa");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnRagudoru(){
+        var obj = document.getElementById("ragudoru");
+        obj.src = "/assets/ragudoru.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffRagudoru(){
+        var obj = document.getElementById("ragudoru");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnFujisan(){
+        var obj = document.getElementById("fujisan");
+        obj.src = "/assets/fujisan.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffFujisan(){
+        var obj = document.getElementById("fujisan");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnGoutei(){
+        var obj = document.getElementById("goutei");
+        obj.src = "/assets/goutei.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffGoutei(){
+        var obj = document.getElementById("goutei");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnNekoirasuto(){
+        var obj = document.getElementById("nekoirasuto");
+        obj.src = "/assets/nekoirasuto.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffNekoirasuto(){
+        var obj = document.getElementById("nekoirasuto");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnRamen(){
+        var obj = document.getElementById("ramen");
+        obj.src = "/assets/ramen.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffRamen(){
+        var obj = document.getElementById("ramen");
+        obj.src = "/assets/white.png";
+      }
+      
+      //マウスオーバー時の処理
+      function mouseOnRuby(){
+        var obj = document.getElementById("ruby");
+        obj.src = "/assets/ruby.png";
+      }
+ 
+      //マウスアウト時の処理
+      function mouseOffRuby(){
+        var obj = document.getElementById("ruby");
+        obj.src = "/assets/white.png";
       }
     </script>
   </body>
