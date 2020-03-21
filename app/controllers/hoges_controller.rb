@@ -1,9 +1,6 @@
-class HomeController < ApplicationController
-    def top
-        
-    end
+class HogesController < ApplicationController
     
-    def new
+    def hoge
         redirect_to "monsterstrike-app://joingame/?join=MzM0MjI0MDcx"
     end
 end
